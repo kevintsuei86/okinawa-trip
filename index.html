@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okinawa Trip Itinerary</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>西瓜的沖繩自駕 App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: -apple-system, sans-serif; background-color: #f7f3e9; color: #333; }
+        .card { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; border: 1px solid #e2dcc8; }
+        .nav-button { background: #2c3e50; color: white; width: 100%; display: block; text-align: center; padding: 12px; border-radius: 10px; font-weight: bold; margin-top: 10px; text-decoration: none; }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Okinawa Trip Itinerary</h1>
+<body class="p-4 pb-20">
+    <header class="py-6 text-center">
+        <h1 class="text-2xl font-bold">Okinawa 2026 🚗</h1>
+        <p class="text-gray-500">西瓜專屬行程小工具</p>
     </header>
-    <main>
-        <section>
-            <h2>Day 1: Arrival</h2>
-            <p>Arrive in Okinawa. Check into the hotel and relax.</p>
-        </section>
-        <section>
-            <h2>Day 2: Explore Naha</h2>
-            <ul>
-                <li>Visit Shurijo Castle</li>
-                <li>Explore Kokusai Street</li>
-                <li>Try local food such as Okinawa soba</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Day 3: Beach Day</h2>
-            <p>Spend the day at the beautiful beaches of Okinawa, enjoy swimming and snorkeling.</p>
-        </section>
-        <section>
-            <h2>Day 4: Island Hopping</h2>
-            <p>Take a ferry to nearby islands like Tokashiki or Zamami.</p>
-        </section>
-        <section>
-            <h2>Day 5: Departure</h2>
-            <p>Last-minute shopping before heading to the airport.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Okinawa Trip</p>
-    </footer>
+
+    <div class="card border-l-8 border-red-500">
+        <h2 class="text-sm font-bold text-red-600 mb-2">🏠 住宿重點資訊</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div><p class="text-xs text-gray-400">房號</p><p class="text-xl font-mono font-bold">938355</p></div>
+            <div><p class="text-xs text-gray-400">大門密碼</p><p class="text-xl font-mono font-bold">2580</p></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="flex justify-between items-center mb-3">
+            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">2/23 Mon</span>
+            <span class="text-xs text-gray-400">機場 / 取車</span>
+        </div>
+        <h3 class="font-bold text-lg">OTS 臨空豐崎營業所</h3>
+        <p class="text-sm text-gray-500">預約編號：OTS1386185</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=OTS+Rinku+Toyosaki" class="nav-button">📍 點我導航</a>
+    </div>
+
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t p-4 flex justify-around text-xs font-bold text-gray-400">
+        <div class="text-blue-600">📅 行程</div>
+        <div>💰 記帳</div>
+        <div>📞 緊急</div>
+    </nav>
 </body>
 </html>
